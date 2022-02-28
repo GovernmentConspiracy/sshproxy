@@ -14,4 +14,4 @@ The basis of this script is binding `localhost:8080` to a server with ssh access
 4. End the script by pressing `ctrl c`.
 
 ## Notes
-You can watch what is happening when you run the script by opening `Network Preferences > Wi-Fi > Advanced... > Proxies > SOCKS Proxy`, and when you cancel it. Check what is your reported IP address before and after running the script. 
+You can watch what is happening when you run the script by opening `System Preferences > Network > Wi-Fi > Advanced... > Proxies > SOCKS Proxy`, and when you cancel it. Check what is your reported IP address before and after running the script. 
