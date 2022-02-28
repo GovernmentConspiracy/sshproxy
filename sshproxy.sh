@@ -8,6 +8,7 @@ function net_off() {
 	exit
 }
 
+networksetup -setsocksfirewallproxy Wi-Fi localhost 8080
 networksetup -setsocksfirewallproxystate Wi-Fi on
 ssh -CN -D 8080 $@
 net_off
