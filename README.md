@@ -1,6 +1,5 @@
 # sshproxy
-Simple macOS convenience script which enables Wi-Fi SOCKS proxy from command line and connects to the provided ssh server. 
-The basis of this script is binding `localhost:8080` to a server with ssh access using `ssh -D {yourSSHServer}`.
+Simple macOS convenience script which enables Wi-Fi SOCKS proxy from command line and connects to the provided ssh server by ssh tunnel. 
 
 *Poor man's VPN.*
 
@@ -14,4 +13,9 @@ The basis of this script is binding `localhost:8080` to a server with ssh access
 4. End the script by pressing `ctrl c`.
 
 ## Notes
-You can watch what is happening when you run the script by opening `System Preferences > Network > Wi-Fi > Advanced... > Proxies > SOCKS Proxy`, and when you cancel it. Check what is your reported IP address before and after running the script. 
+You can watch what is happening when you run the script by opening `System Preferences > Network > Wi-Fi > Advanced... > Proxies > SOCKS Proxy`, and when you cancel it. Check what is your reported IP address before and after running the script.
+
+The basis of this script is binding `localhost:8080` to a server using a ssh tunnel: `ssh -D {yourSSHServer}`.
+The server does not need SOCKS. [More information here.](https://www.systutorials.com/proxy-using-ssh-tunnel/)
+
+
